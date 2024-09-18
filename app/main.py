@@ -59,7 +59,9 @@ def update_graph(col_chosen):
     bar_fig.update_layout(
         title=dict(text="Bookings and Cancellations", font=dict(size=30), automargin=True, yref='paper'),
         yaxis_title = dict(text = 'Count of Bookings',font=dict(size=20)),
-        xaxis_title = dict(text = col_chosen_clean,font=dict(size=20))
+        xaxis_title = dict(text = col_chosen_clean,font=dict(size=20)),
+        xaxis=dict(tickfont=dict(size=15)),  # Adjust tick font size for x-axis
+        yaxis=dict(tickfont=dict(size=15))   # Adjust tick font size for y-axis
     )
 
     # Box plot data
@@ -68,7 +70,9 @@ def update_graph(col_chosen):
     box_fig.update_layout(
         title=dict(text="Lead Time Distributions", font=dict(size=30), automargin=True, yref='paper'),
         xaxis_title = dict(text = 'Lead Time (Days)',font=dict(size=20)),
-        yaxis_title = dict(text = col_chosen_clean,font=dict(size=20))
+        yaxis_title = dict(text = col_chosen_clean,font=dict(size=20)),
+        xaxis=dict(tickfont=dict(size=15)),  # Adjust tick font size for x-axis
+        yaxis=dict(tickfont=dict(size=15))   # Adjust tick font size for y-axis
     )
 
     #dist fig
@@ -76,7 +80,9 @@ def update_graph(col_chosen):
     dist_fig.update_layout(
         title=dict(text="Lead Time Distributions", font=dict(size=30), automargin=True, yref='paper'),
         yaxis_title = dict(text = 'Average Daily Revenue',font=dict(size=20)),
-        xaxis_title = dict(text = col_chosen_clean,font=dict(size=20))
+        xaxis_title = dict(text = col_chosen_clean,font=dict(size=20)),
+        xaxis=dict(tickfont=dict(size=15)),  # Adjust tick font size for x-axis
+        yaxis=dict(tickfont=dict(size=15))   # Adjust tick font size for y-axis
     )
     return bar_fig, box_fig, dist_fig
 

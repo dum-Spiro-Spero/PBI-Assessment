@@ -1754,3 +1754,86 @@ INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:14] "POST /_dash-update-component
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:22] "POST /_dash-update-component HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:26] "POST /_dash-update-component HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:39] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:21:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:21:52] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:21:52] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:21:52] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:21:52] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 80, in update_graph
+    xaxis = list(tickfont = list(size = 20))
+                            ^^^^^^^^^^^^^^^
+TypeError: list() takes no keyword arguments
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:21:52] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:02] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:02] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:02] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:02] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:02] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:21] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:21] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:21] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:21] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:21] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:39] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:39] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:39] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:39] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:24:40] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:25:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:25:02] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:25:02] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:25:02] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:25:02] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:25:02] "POST /_dash-update-component HTTP/1.1" 200 -
