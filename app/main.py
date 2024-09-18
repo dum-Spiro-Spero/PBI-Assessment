@@ -20,6 +20,12 @@ is_outlier = (hotel_df['adr'] < (Q1 - 1.5 * IQR)) | (hotel_df['adr'] > (Q3 + 1.5
 # Remove outliers
 cleaned_df = hotel_df[~is_outlier]
 
+# Define outliers
+is_outlier2 = (hotel_df['lead_time'] < (Q1 - 1.5 * IQR)) | (hotel_df['lead_time'] > (Q3 + 1.5 * IQR))
+
+# Remove outliers
+cleaned_df2 = hotel_df[~is_outlier2]
+
 logging.basicConfig(filename='app.log', level=logging.DEBUG)
 
 # Initialize the app
@@ -44,15 +50,34 @@ app.layout = [
 )
 def update_graph(col_chosen):
     # Bar chart data
+    col_chosen_clean = str.capitalize(str.replace(col_chosen,'_',' '))
+
     hotel_df_chart = hotel_df[['is_canceled', col_chosen]]
     plot_df_agg1 = hotel_df_chart.groupby(['is_canceled', col_chosen]).agg(count=('is_canceled', 'count')).reset_index()
     bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='count', color='is_canceled', title="Bookings and Cancellations")
 
+    bar_fig.update_layout(
+        title=dict(text="Bookings and Cancellations", font=dict(size=30), automargin=True, yref='paper'),
+        yaxis_title = dict(text = 'Count of Bookings',font=dict(size=20)),
+        xaxis_title = dict(text = col_chosen_clean,font=dict(size=20))
+    )
+
     # Box plot data
-    box_fig = px.violin(hotel_df, y=col_chosen, x='lead_time', title="Lead Time Distributions")
+    box_fig = px.violin(cleaned_df2, y=col_chosen, x='lead_time', title="Lead Time Distributions")
+
+    box_fig.update_layout(
+        title=dict(text="Lead Time Distributions", font=dict(size=30), automargin=True, yref='paper'),
+        xaxis_title = dict(text = 'Lead Time (Days)',font=dict(size=20)),
+        yaxis_title = dict(text = col_chosen_clean,font=dict(size=20))
+    )
 
     #dist fig
-    dist_fig = px.violin(cleaned_df, y='adr', x=col_chosen, title = 'Revenue Distributions')
+    dist_fig = px.violin(cleaned_df, y='adr', x=col_chosen,  title = 'Revenue Distributions')
+    dist_fig.update_layout(
+        title=dict(text="Lead Time Distributions", font=dict(size=30), automargin=True, yref='paper'),
+        yaxis_title = dict(text = 'Average Daily Revenue',font=dict(size=20)),
+        xaxis_title = dict(text = col_chosen_clean,font=dict(size=20))
+    )
     return bar_fig, box_fig, dist_fig
 
 # Run the app

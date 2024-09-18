@@ -102,3 +102,1655 @@ KeyError: "Callback function not found for output '..deploy-terminal.value...dep
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:10] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:10] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:10] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:10] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:10] "POST /_dash-update-component HTTP/1.1" 200 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..', perhaps you forgot to prepend the '@'?"
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..', perhaps you forgot to prepend the '@'?"
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deploy-terminal.value...deploy-terminal-runjs.run..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deploy-terminal.value...deploy-terminal-runjs.run..', perhaps you forgot to prepend the '@'?"
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:29] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:29] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:29] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:31] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:31] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:31] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:31] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:32] "POST /_dash-update-component HTTP/1.1" 200 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..', perhaps you forgot to prepend the '@'?"
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..', perhaps you forgot to prepend the '@'?"
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:54] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deploy-terminal.value...deploy-terminal-runjs.run..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deploy-terminal.value...deploy-terminal-runjs.run..', perhaps you forgot to prepend the '@'?"
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:54] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:54] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:58] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:58] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:58] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:58] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:49:58] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:12] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:12] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:13] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:13] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:13] "POST /_dash-update-component HTTP/1.1" 200 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deploy-terminal.value...deploy-terminal-runjs.run..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deploy-terminal.value...deploy-terminal-runjs.run..', perhaps you forgot to prepend the '@'?"
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..', perhaps you forgot to prepend the '@'?"
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..', perhaps you forgot to prepend the '@'?"
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:20] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:20] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:20] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..', perhaps you forgot to prepend the '@'?"
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:20] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..', perhaps you forgot to prepend the '@'?"
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:20] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deploy-terminal.value...deploy-terminal-runjs.run..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deploy-terminal.value...deploy-terminal-runjs.run..', perhaps you forgot to prepend the '@'?"
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:50:20] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:11] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:11] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:11] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:11] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:11] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:11] "GET /_favicon.ico?v=2.18.1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:23] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:23] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:23] "GET /_favicon.ico?v=2.18.1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:23] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:23] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:51:23] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:52:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:52:57] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:52:57] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:52:57] "GET /_favicon.ico?v=2.18.1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:52:57] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:52:57] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:52:57] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:53:09] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:53:11] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:07] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:07] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:07] "GET /_favicon.ico?v=2.18.1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:07] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:07] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:07] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:24] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:24] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:24] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:24] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 55, in update_graph
+    bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='Number of Bookings', color='is_canceled', title="Bookings and Cancellations")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_chart_types.py", line 373, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 2117, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1513, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1234, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['is_canceled', 'distribution_channel', 'count'] but received: Number of Bookings
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:24] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 55, in update_graph
+    bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='Number of Bookings', color='is_canceled', title="Bookings and Cancellations")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_chart_types.py", line 373, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 2117, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1513, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1234, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['is_canceled', 'market_segment', 'count'] but received: Number of Bookings
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:34] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 55, in update_graph
+    bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='Number of Bookings', color='is_canceled', title="Bookings and Cancellations")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_chart_types.py", line 373, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 2117, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1513, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1234, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['is_canceled', 'deposit_type', 'count'] but received: Number of Bookings
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:35] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 55, in update_graph
+    bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='Number of Bookings', color='is_canceled', title="Bookings and Cancellations")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_chart_types.py", line 373, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 2117, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1513, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1234, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['is_canceled', 'distribution_channel', 'count'] but received: Number of Bookings
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:35] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:41] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:41] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:41] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:41] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 55, in update_graph
+    bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='Number of Bookings', color='is_canceled', title="Bookings and Cancellations")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_chart_types.py", line 373, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 2117, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1513, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1234, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['is_canceled', 'distribution_channel', 'count'] but received: Number of Bookings
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:41] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:45] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:45] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:45] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:45] "GET /_favicon.ico?v=2.18.1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:45] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 55, in update_graph
+    bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='Number of Bookings', color='is_canceled', title="Bookings and Cancellations")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_chart_types.py", line 373, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 2117, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1513, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1234, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['is_canceled', 'distribution_channel', 'count'] but received: Number of Bookings
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:55:45] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:09] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:09] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:09] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:09] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:09] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:09] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 55, in update_graph
+    bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='Number of Bookings', color='is_canceled', title="Bookings and Cancellations")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_chart_types.py", line 373, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 2117, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1513, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1234, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['is_canceled', 'distribution_channel', 'count'] but received: Number of Bookings
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:09] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:31] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:31] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:31] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:31] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:31] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:31] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 55, in update_graph
+    bar_fig = px.bar(plot_df_agg1, x=col_chosen, y='count', color='is_canceled', title="Bookings and Cancellations")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_chart_types.py", line 373, in bar
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 2117, in make_figure
+    args = build_dataframe(args, constructor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1513, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/express/_core.py", line 1234, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['is_canceled', 'distribution_channel', 'count'] but received: Number of Bookings
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:56:31] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:05] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:05] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:05] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:05] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:06] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:09] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:52] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:52] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:52] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:52] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:57:52] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:12] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:12] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:12] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:12] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:12] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:24] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:24] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:24] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:24] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:24] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:35] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:35] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:35] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:35] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 13:58:36] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:09] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:09] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:09] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:09] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 59, in update_graph
+    box_fig = px.violin(cleaned_df2, y=col_chosen, x='lead_time',x_label = 'Lead Time (Days)', title="Lead Time Distributions")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: violin() got an unexpected keyword argument 'x_label'
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:09] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:14] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:14] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:15] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:15] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 59, in update_graph
+    box_fig = px.violin(cleaned_df2, y=col_chosen, x='lead_time',x_label = 'Lead Time (Days)', title="Lead Time Distributions")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: violin() got an unexpected keyword argument 'x_label'
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:15] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:33] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:33] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:33] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:33] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 59, in update_graph
+    box_fig = px.violin(cleaned_df2, y=col_chosen, x='lead_time',x_label = 'Lead Time (Days)', title="Lead Time Distributions")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: violin() got an unexpected keyword argument 'x_label'
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:33] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 59, in update_graph
+    box_fig = px.violin(cleaned_df2, y=col_chosen, x='lead_time',x_label = 'Lead Time (Days)', title="Lead Time Distributions")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: violin() got an unexpected keyword argument 'x_label'
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:49] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 59, in update_graph
+    box_fig = px.violin(cleaned_df2, y=col_chosen, x='lead_time',x_label = 'Lead Time (Days)', title="Lead Time Distributions")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: violin() got an unexpected keyword argument 'x_label'
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:50] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:56] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:56] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:56] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:56] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:56] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:56] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 59, in update_graph
+    box_fig = px.violin(cleaned_df2, y=col_chosen, x='lead_time',x_label = 'Lead Time (Days)', title="Lead Time Distributions")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: violin() got an unexpected keyword argument 'x_label'
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:00:56] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:01:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:01:34] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:01:34] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:01:34] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:01:34] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:01:35] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:01:35] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:01:35] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:02] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:02] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:02] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:02] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:02] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:12] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:12] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:12] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:12] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:12] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:22] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:22] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:22] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:22] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:03:22] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:05:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:05:47] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:05:47] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:05:47] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:05:47] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:05:48] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:06:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:06:54] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:06:54] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:06:54] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:06:54] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 57, in update_graph
+    bar_fig.update_layout(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/graph_objs/_figure.py", line 792, in update_layout
+    return super(Figure, self).update_layout(dict1, overwrite, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 1391, in update_layout
+    self.layout.update(dict1, overwrite=overwrite, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 5131, in update
+    BaseFigure._perform_update(self, kwargs, overwrite=overwrite)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3913, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3890, in _perform_update
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.layout.yaxis.Title: 'automargin'
+
+Did you mean "font"?
+
+    Valid properties:
+        font
+            Sets this axis' title font. Note that the title's font
+            used to be customized by the now deprecated `titlefont`
+            attribute.
+        standoff
+            Sets the standoff distance (in px) between the axis
+            labels and the title text The default value is a
+            function of the axis tick labels, the title `font.size`
+            and the axis `linewidth`. Note that the axis title
+            position is always constrained within the margins, so
+            the actual standoff distance is always less than the
+            set or default value. By setting `standoff` and turning
+            on `automargin`, plotly.js will push the margins to fit
+            the axis title at given standoff distance.
+        text
+            Sets the title of this axis. Note that before the
+            existence of `title.text`, the title's contents used to
+            be defined as the `title` attribute itself. This
+            behavior has been deprecated.
+        
+Did you mean "font"?
+
+Bad property path:
+automargin
+^^^^^^^^^^
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:06:54] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:00] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:00] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:00] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:00] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 57, in update_graph
+    bar_fig.update_layout(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/graph_objs/_figure.py", line 792, in update_layout
+    return super(Figure, self).update_layout(dict1, overwrite, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 1391, in update_layout
+    self.layout.update(dict1, overwrite=overwrite, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 5131, in update
+    BaseFigure._perform_update(self, kwargs, overwrite=overwrite)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3913, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3890, in _perform_update
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.layout.yaxis.Title: 'automargin'
+
+Did you mean "font"?
+
+    Valid properties:
+        font
+            Sets this axis' title font. Note that the title's font
+            used to be customized by the now deprecated `titlefont`
+            attribute.
+        standoff
+            Sets the standoff distance (in px) between the axis
+            labels and the title text The default value is a
+            function of the axis tick labels, the title `font.size`
+            and the axis `linewidth`. Note that the axis title
+            position is always constrained within the margins, so
+            the actual standoff distance is always less than the
+            set or default value. By setting `standoff` and turning
+            on `automargin`, plotly.js will push the margins to fit
+            the axis title at given standoff distance.
+        text
+            Sets the title of this axis. Note that before the
+            existence of `title.text`, the title's contents used to
+            be defined as the `title` attribute itself. This
+            behavior has been deprecated.
+        
+Did you mean "font"?
+
+Bad property path:
+automargin
+^^^^^^^^^^
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:00] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:22] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:22] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:22] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:22] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 57, in update_graph
+    bar_fig.update_layout(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/graph_objs/_figure.py", line 792, in update_layout
+    return super(Figure, self).update_layout(dict1, overwrite, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 1391, in update_layout
+    self.layout.update(dict1, overwrite=overwrite, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 5131, in update
+    BaseFigure._perform_update(self, kwargs, overwrite=overwrite)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3913, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3890, in _perform_update
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.layout.yaxis.Title: 'automargin'
+
+Did you mean "font"?
+
+    Valid properties:
+        font
+            Sets this axis' title font. Note that the title's font
+            used to be customized by the now deprecated `titlefont`
+            attribute.
+        standoff
+            Sets the standoff distance (in px) between the axis
+            labels and the title text The default value is a
+            function of the axis tick labels, the title `font.size`
+            and the axis `linewidth`. Note that the axis title
+            position is always constrained within the margins, so
+            the actual standoff distance is always less than the
+            set or default value. By setting `standoff` and turning
+            on `automargin`, plotly.js will push the margins to fit
+            the axis title at given standoff distance.
+        text
+            Sets the title of this axis. Note that before the
+            existence of `title.text`, the title's contents used to
+            be defined as the `title` attribute itself. This
+            behavior has been deprecated.
+        
+Did you mean "font"?
+
+Bad property path:
+automargin
+^^^^^^^^^^
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:22] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 57, in update_graph
+    bar_fig.update_layout(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/graph_objs/_figure.py", line 792, in update_layout
+    return super(Figure, self).update_layout(dict1, overwrite, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 1391, in update_layout
+    self.layout.update(dict1, overwrite=overwrite, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 5131, in update
+    BaseFigure._perform_update(self, kwargs, overwrite=overwrite)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3913, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3890, in _perform_update
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.layout.yaxis.Title: 'automargin'
+
+Did you mean "font"?
+
+    Valid properties:
+        font
+            Sets this axis' title font. Note that the title's font
+            used to be customized by the now deprecated `titlefont`
+            attribute.
+        standoff
+            Sets the standoff distance (in px) between the axis
+            labels and the title text The default value is a
+            function of the axis tick labels, the title `font.size`
+            and the axis `linewidth`. Note that the axis title
+            position is always constrained within the margins, so
+            the actual standoff distance is always less than the
+            set or default value. By setting `standoff` and turning
+            on `automargin`, plotly.js will push the margins to fit
+            the axis title at given standoff distance.
+        text
+            Sets the title of this axis. Note that before the
+            existence of `title.text`, the title's contents used to
+            be defined as the `title` attribute itself. This
+            behavior has been deprecated.
+        
+Did you mean "font"?
+
+Bad property path:
+automargin
+^^^^^^^^^^
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:24] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 57, in update_graph
+    bar_fig.update_layout(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/graph_objs/_figure.py", line 792, in update_layout
+    return super(Figure, self).update_layout(dict1, overwrite, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 1391, in update_layout
+    self.layout.update(dict1, overwrite=overwrite, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 5131, in update
+    BaseFigure._perform_update(self, kwargs, overwrite=overwrite)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3913, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3890, in _perform_update
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.layout.yaxis.Title: 'automargin'
+
+Did you mean "font"?
+
+    Valid properties:
+        font
+            Sets this axis' title font. Note that the title's font
+            used to be customized by the now deprecated `titlefont`
+            attribute.
+        standoff
+            Sets the standoff distance (in px) between the axis
+            labels and the title text The default value is a
+            function of the axis tick labels, the title `font.size`
+            and the axis `linewidth`. Note that the axis title
+            position is always constrained within the margins, so
+            the actual standoff distance is always less than the
+            set or default value. By setting `standoff` and turning
+            on `automargin`, plotly.js will push the margins to fit
+            the axis title at given standoff distance.
+        text
+            Sets the title of this axis. Note that before the
+            existence of `title.text`, the title's contents used to
+            be defined as the `title` attribute itself. This
+            behavior has been deprecated.
+        
+Did you mean "font"?
+
+Bad property path:
+automargin
+^^^^^^^^^^
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:24] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:39] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:39] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:39] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:39] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 57, in update_graph
+    bar_fig.update_layout(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/graph_objs/_figure.py", line 792, in update_layout
+    return super(Figure, self).update_layout(dict1, overwrite, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 1391, in update_layout
+    self.layout.update(dict1, overwrite=overwrite, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 5131, in update
+    BaseFigure._perform_update(self, kwargs, overwrite=overwrite)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3913, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3890, in _perform_update
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.layout.yaxis.Title: 'automargin'
+
+Did you mean "font"?
+
+    Valid properties:
+        font
+            Sets this axis' title font. Note that the title's font
+            used to be customized by the now deprecated `titlefont`
+            attribute.
+        standoff
+            Sets the standoff distance (in px) between the axis
+            labels and the title text The default value is a
+            function of the axis tick labels, the title `font.size`
+            and the axis `linewidth`. Note that the axis title
+            position is always constrained within the margins, so
+            the actual standoff distance is always less than the
+            set or default value. By setting `standoff` and turning
+            on `automargin`, plotly.js will push the margins to fit
+            the axis title at given standoff distance.
+        text
+            Sets the title of this axis. Note that before the
+            existence of `title.text`, the title's contents used to
+            be defined as the `title` attribute itself. This
+            behavior has been deprecated.
+        
+Did you mean "font"?
+
+Bad property path:
+automargin
+^^^^^^^^^^
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:39] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:47] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:47] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:47] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:47] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:07:47] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:33] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:33] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:33] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:33] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 57, in update_graph
+    bar_fig.update_layout(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/graph_objs/_figure.py", line 792, in update_layout
+    return super(Figure, self).update_layout(dict1, overwrite, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 1391, in update_layout
+    self.layout.update(dict1, overwrite=overwrite, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 5131, in update
+    BaseFigure._perform_update(self, kwargs, overwrite=overwrite)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3913, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/plotly/basedatatypes.py", line 3890, in _perform_update
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.layout.yaxis.Title: 'titlefont'
+
+Did you mean "font"?
+
+    Valid properties:
+        font
+            Sets this axis' title font. Note that the title's font
+            used to be customized by the now deprecated `titlefont`
+            attribute.
+        standoff
+            Sets the standoff distance (in px) between the axis
+            labels and the title text The default value is a
+            function of the axis tick labels, the title `font.size`
+            and the axis `linewidth`. Note that the axis title
+            position is always constrained within the margins, so
+            the actual standoff distance is always less than the
+            set or default value. By setting `standoff` and turning
+            on `automargin`, plotly.js will push the margins to fit
+            the axis title at given standoff distance.
+        text
+            Sets the title of this axis. Note that before the
+            existence of `title.text`, the title's contents used to
+            be defined as the `title` attribute itself. This
+            behavior has been deprecated.
+        
+Did you mean "font"?
+
+Bad property path:
+titlefont
+^^^^^^^^^
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:33] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:49] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:49] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:49] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:49] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:08:49] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:14:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:14:02] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:14:02] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:14:03] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:14:03] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:14:03] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:32] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:32] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:32] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:32] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 61, in update_graph
+    xaxis = list(tickfont = list(size = 15)),
+                            ^^^^^^^^^^^^^^^
+TypeError: list() takes no keyword arguments
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:32] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1376, in dispatch
+    ctx.run(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 514, in add_context
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 503, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/connormanthey/Documents/Projects/PBIAssessment/./app/main.py", line 61, in update_graph
+    xaxis = list(tickfont = list(size = 15)),
+                            ^^^^^^^^^^^^^^^
+TypeError: list() takes no keyword arguments
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:36] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:45] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:45] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:45] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:45] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:15:45] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:14] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:14] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:14] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:14] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:14] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:22] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:26] "POST /_dash-update-component HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 14:17:39] "POST /_dash-update-component HTTP/1.1" 200 -
