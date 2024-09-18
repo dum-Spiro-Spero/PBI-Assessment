@@ -78,7 +78,7 @@ def update_graph(col_chosen):
     #dist fig
     dist_fig = px.violin(cleaned_df, y='adr', x=col_chosen,  title = 'Revenue Distributions')
     dist_fig.update_layout(
-        title=dict(text="Lead Time Distributions", font=dict(size=30), automargin=True, yref='paper'),
+        title=dict(text="Revenue Distributions", font=dict(size=30), automargin=True, yref='paper'),
         yaxis_title = dict(text = 'Average Daily Revenue',font=dict(size=20)),
         xaxis_title = dict(text = col_chosen_clean,font=dict(size=20)),
         xaxis=dict(tickfont=dict(size=15)),  # Adjust tick font size for x-axis
