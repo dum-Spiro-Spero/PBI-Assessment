@@ -8,3 +8,19 @@ INFO:dash.dash:Dash is running on http://0.0.0.0:8000/
 
 INFO:dash.dash:Dash is running on http://127.0.0.1:8000/
 
+INFO:dash.dash:Dash is running on http://0.0.0.0:10000/
+
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:27] "GET /_reload-hash HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:27] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:27] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "GET /_dash-layout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "GET /_dash-dependencies HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "POST /_dash-update-component HTTP/1.1" 200 -

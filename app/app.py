@@ -23,6 +23,7 @@ cleaned_df = hotel_df[~is_outlier]
 logging.basicConfig(filename='app.log', level=logging.DEBUG)
 
 # Initialize the app
+
 app = Dash()
 server = app.server
 
@@ -56,5 +57,5 @@ def update_graph(col_chosen):
 
 # Run the app
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0', port=10000)
+    app.run()
 
