@@ -24,3 +24,81 @@ INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "GET /_dash-dependencies HTTP
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:28] "POST /_dash-update-component HTTP/1.1" 200 -
+ERROR:app:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..readiness-check-app-exists.children...readiness-check-render-yaml-exists.children...readiness-check-requirements-exists.children...readiness-check-hook-exists.children...readiness-check-on-github.children...readiness-check-render-yaml-generator-vis.style...readiness-check-requirements-generator-vis.style..', perhaps you forgot to prepend the '@'?"
+ERROR:app:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deployment-readiness-status-output.children...app-control-deploy-button-container.children..', perhaps you forgot to prepend the '@'?"
+ERROR:app:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1307, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: '..deploy-terminal.value...deploy-terminal-runjs.run..'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dash/dash.py", line 1371, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output '..deploy-terminal.value...deploy-terminal-runjs.run..', perhaps you forgot to prepend the '@'?"
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Sep/2024 10:46:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
