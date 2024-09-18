@@ -24,6 +24,7 @@ logging.basicConfig(filename='app.log', level=logging.DEBUG)
 
 # Initialize the app
 app = Dash()
+server = app.server
 
 # App layout
 app.layout = [
