@@ -2,3 +2,9 @@ INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
 
 INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
 
+INFO:dash.dash:Dash is running on http://0.0.0.0:5000/
+
+INFO:dash.dash:Dash is running on http://0.0.0.0:8000/
+
+INFO:dash.dash:Dash is running on http://127.0.0.1:8000/
+
